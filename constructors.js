@@ -138,6 +138,9 @@ function Employee(name, email, hireDate) {
   
   // Code here
   User.prototype.changePostRating = function(num1, num2) {
-  if (this.savedPosts.indexOf('savedPost.id', 0) === num1)
-    this.savedPosts[num1].rating = num2;
+    this.savedPosts.forEach(e => {
+      if(e.id === num1){
+        return e.rating = num2;
+      }
+    })
   }
