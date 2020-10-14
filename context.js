@@ -18,6 +18,13 @@
 */
 
 //Code Here
+let user = {
+  username: '',
+  email: '',
+  getUsername: function() {
+  return this.username;
+  }
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -26,9 +33,9 @@
 */
 
 function Animal(name, species, food) {
-  this.name = name
-  this.species = species
-  this.food = food
+  this.name = name;
+  this.species = species;
+  this.food = food;
 
   this.eat = function() {
     return (
@@ -38,6 +45,7 @@ function Animal(name, species, food) {
 }
 
 //Code Here
+let animal1 = new Animal('Chickpea', 'Canine', 'dog food');
 
 ////////// PROBLEM 3 //////////
 
